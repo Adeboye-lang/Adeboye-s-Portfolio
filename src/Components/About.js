@@ -11,10 +11,12 @@ const About = () => {
 
             {/* Header - Cyber Terminal Style */}
             <div className="relative z-10 text-center my-16 lg:my-24">
-                <h2 className="text-4xl lg:text-6xl font-black font-mono tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-cyan-200 to-cyan-400 animate-pulse">
+                {/* Responsive Header Size */}
+                <h2 className="text-3xl md:text-5xl lg:text-6xl font-black font-mono tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-cyan-200 to-cyan-400 animate-pulse px-4">
                     SYSTEM_ACCESS: <span className="text-white">GRANTED</span>
                 </h2>
-                <div className="mt-2 text-cyan-500/60 font-mono text-sm tracking-[0.5em]">
+                {/* Responsive Tracking & Font Size */}
+                <div className="mt-2 text-cyan-500/60 font-mono text-xs md:text-sm tracking-[0.2em] md:tracking-[0.5em]">
                     {"// LOADING PERSONNEL_DATA_FILE..."}
                 </div>
             </div>
@@ -32,9 +34,9 @@ const About = () => {
                         {/* Projector Frame */}
                         <div className="absolute inset-0 bg-cyan-950/30 clip-path-polygon-[0%_0%,100%_0%,100%_85%,85%_100%,0%_100%] border border-cyan-500/30"></div>
 
-                        {/* Corner Brackets */}
-                        <div className="absolute top-0 left-0 w-16 h-16 border-t-4 border-l-4 border-cyan-500 z-20"></div>
-                        <div className="absolute bottom-0 right-0 w-16 h-16 border-b-4 border-r-4 border-cyan-500 z-20"></div>
+                        {/* Corner Brackets - Responsive Size & Border Width */}
+                        <div className="absolute top-0 left-0 w-8 h-8 lg:w-16 lg:h-16 border-t-2 border-l-2 lg:border-t-4 lg:border-l-4 border-cyan-500 z-20"></div>
+                        <div className="absolute bottom-0 right-0 w-8 h-8 lg:w-16 lg:h-16 border-b-2 border-r-2 lg:border-b-4 lg:border-r-4 border-cyan-500 z-20"></div>
 
                         {/* Scanline Overlay */}
                         <div className="absolute inset-4 z-30 pointer-events-none bg-[linear-gradient(transparent_50%,rgba(6,182,212,0.1)_50%)] bg-[size:100%_4px] opacity-100 mix-blend-overlay"></div>
@@ -48,8 +50,8 @@ const About = () => {
                             />
                         </div>
 
-                        {/* Floating Tech Labels */}
-                        <div className="absolute -right-8 top-10 bg-neutral-900 border border-cyan-500 px-2 py-1 text-[10px] font-mono text-cyan-400 rotate-90 origin-left">
+                        {/* Floating Tech Labels - Hidden on small mobile */}
+                        <div className="absolute -right-8 top-10 bg-neutral-900 border border-cyan-500 px-2 py-1 text-[10px] font-mono text-cyan-400 rotate-90 origin-left hidden sm:block">
                             ID: 8492-XJ
                         </div>
                     </div>
@@ -62,7 +64,8 @@ const About = () => {
                     transition={{ duration: 0.8 }}
                     className="w-full lg:flex-1"
                 >
-                    <div className="relative bg-neutral-900/80 p-8 lg:p-12 border-l-4 border-cyan-500 shadow-[0_0_50px_rgba(6,182,212,0.15)] group">
+                    {/* Responsive Padding: p-4 -> p-12 */}
+                    <div className="relative bg-neutral-900/80 p-6 lg:p-12 border-l-4 border-cyan-500 shadow-[0_0_50px_rgba(6,182,212,0.15)] group">
 
                         {/* Top Bar */}
                         <div className="absolute top-0 right-0 w-full h-8 bg-cyan-950/30 flex items-center justify-end px-4 gap-4 border-b border-cyan-500/30">
@@ -77,25 +80,26 @@ const About = () => {
 
                         {/* Content */}
                         <div className="mt-6 font-mono text-neutral-300 space-y-6 leading-relaxed relative z-10">
-                            <p className="text-lg">
+                            <p className="text-base lg:text-lg">
                                 <span className="text-cyan-400 font-bold">&gt; INITIALIZING BIO_PROTOCOL...</span>
                             </p>
 
-                            <p className="text-justify">
+                            {/* Responsive Text Alignment & Size */}
+                            <p className="text-sm lg:text-base text-left lg:text-justify">
                                 I operate as a <span className="bg-cyan-950/50 text-cyan-300 px-1 border border-cyan-500/30">High-Level Architect</span> within the digital infrastructure space. My primary directive is constructing <span className="text-cyan-400 font-bold">fault-tolerant systems</span> capable of sustaining heavy data loads with <span className="text-cyan-400 font-bold">zero latency</span>.
                             </p>
 
-                            <p className="text-justify">
+                            <p className="text-sm lg:text-base text-left lg:text-justify">
                                 <span className="text-cyan-500/50 mr-2">[EXP_LOG]:</span>
                                 With <span className="text-white font-bold">5+ YEARS</span> of runtime uptime, I specialize in the deployment of distributed applications using the <span className="text-cyan-300">[MERN_STACK]</span> + <span className="text-cyan-300">[NEXT_JS]</span> matrix.
                             </p>
 
-                            <p className="text-justify">
+                            <p className="text-sm lg:text-base text-left lg:text-justify">
                                 <span className="text-cyan-500/50 mr-2">[SYS_DIRECTIVE]:</span>
                                 I don't just write code {"//"} I engineer <span className="text-cyan-300 border-b border-cyan-500 border-dashed">solutions</span> that optimize performance metrics and ensure maximum scalability for enterprise-grade environments.
                             </p>
 
-                            <div className="pt-6 border-t border-cyan-500/30 flex justify-between items-center text-xs text-cyan-500">
+                            <div className="pt-6 border-t border-cyan-500/30 flex flex-col sm:flex-row justify-between items-start sm:items-center text-xs text-cyan-500 gap-2">
                                 <span>CACHE_SIZE: 1024TB</span>
                                 <span>OPTIMIZATION: 99.9%</span>
                             </div>
