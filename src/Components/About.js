@@ -15,7 +15,7 @@ const About = () => {
                     SYSTEM_ACCESS: <span className="text-white">GRANTED</span>
                 </h2>
                 <div className="mt-2 text-cyan-500/60 font-mono text-sm tracking-[0.5em]">
-                    // LOADING PERSONNEL_DATA_FILE...
+                    {"// LOADING PERSONNEL_DATA_FILE..."}
                 </div>
             </div>
 
@@ -92,7 +92,7 @@ const About = () => {
 
                             <p className="text-justify">
                                 <span className="text-cyan-500/50 mr-2">[SYS_DIRECTIVE]:</span>
-                                I don't just write code // I engineer <span className="text-cyan-300 border-b border-cyan-500 border-dashed">solutions</span> that optimize performance metrics and ensure maximum scalability for enterprise-grade environments.
+                                I don't just write code {"//"} I engineer <span className="text-cyan-300 border-b border-cyan-500 border-dashed">solutions</span> that optimize performance metrics and ensure maximum scalability for enterprise-grade environments.
                             </p>
 
                             <div className="pt-6 border-t border-cyan-500/30 flex justify-between items-center text-xs text-cyan-500">
