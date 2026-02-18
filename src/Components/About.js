@@ -43,33 +43,34 @@ const About = () => {
                     </div>
                 </motion.div>
 
-                {/* Text Section - Clean Typography with Highlights */}
+                {/* Text Section - Glassmorphism 2.0 & Modern Typography */}
                 <motion.div
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: 50 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="w-full lg:w-1/2 p-4 lg:p-8"
                 >
-                    <div className="bg-neutral-900/50 backdrop-blur-md p-8 lg:p-10 rounded-2xl border border-cyan-500/20 shadow-[0_0_30px_rgba(34,211,238,0.05)] relative overflow-hidden group hover:border-cyan-500/40 hover:shadow-[0_0_40px_rgba(34,211,238,0.1)] transition-all duration-500">
+                    <div className="bg-neutral-900/50 backdrop-blur-xl p-8 lg:p-12 rounded-2xl border border-white/10 shadow-[0_0_30px_rgba(0,0,0,0.3)] relative overflow-hidden group hover:border-cyan-500/30 hover:shadow-[0_0_50px_rgba(34,211,238,0.15)] transition-all duration-700 hover:-translate-y-1">
 
-                        {/* Tech Corners for Bio Box */}
-                        <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-cyan-500/50 rounded-tl-lg"></div>
-                        <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-cyan-500/50 rounded-tr-lg"></div>
-                        <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-cyan-500/50 rounded-bl-lg"></div>
-                        <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-cyan-500/50 rounded-br-lg"></div>
+                        {/* Elegant Tech Corners */}
+                        <div className="absolute top-0 left-0 w-12 h-12 border-t-[1px] border-l-[1px] border-cyan-500/30 rounded-tl-2xl group-hover:border-cyan-500/80 transition-colors duration-700"></div>
+                        <div className="absolute bottom-0 right-0 w-12 h-12 border-b-[1px] border-r-[1px] border-cyan-500/30 rounded-br-2xl group-hover:border-cyan-500/80 transition-colors duration-700"></div>
 
-                        {/* Decorative Scan Line */}
-                        <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-20"></div>
+                        {/* Ambient Background Gradient */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
-                        <p className="font-light text-neutral-300 leading-relaxed text-base lg:text-lg tracking-wide text-justify relative z-10">
-                            I am a <span className="text-cyan-400 font-medium">software architect</span> and <span className="text-cyan-400 font-medium">systems engineer</span> dedicated to building <span className="text-cyan-400 font-medium">scalable</span>, <span className="text-cyan-400 font-medium">fault-tolerant</span> digital infrastructure.
-                            <br /><br />
-                            With over <span className="text-cyan-400 font-medium">5 years</span> of engineering experience, I specialize in architecting high-performance applications using <span className="text-cyan-400 font-mono text-sm">React</span>, <span className="text-cyan-400 font-mono text-sm">Next.js</span>, <span className="text-cyan-400 font-mono text-sm">Node.js</span>, and distributed databases like <span className="text-cyan-400 font-mono text-sm">PostgreSQL</span> and <span className="text-cyan-400 font-mono text-sm">MongoDB</span>.
-                            <br /><br />
-                            My approach combines <span className="text-cyan-400 font-medium">algorithmic efficiency</span> with <span className="text-cyan-400 font-medium">system design principles</span> to deliver optionality and speed. I don't just write code; I engineer <span className="text-cyan-400 font-medium">solutions</span> optimized for performance, security, and maintainability.
-                            <br /><br />
-                            I thrive on solving complex technical challenges, from optimizing <span className="text-cyan-400 font-medium">runtime latency</span> to deploying <span className="text-cyan-400 font-medium">containerized microservices</span>. Always iterating, always compiling new knowledge.
-                        </p>
+                        {/* Content */}
+                        <div className="relative z-10">
+                            <p className="font-light text-neutral-300 leading-loose text-base lg:text-lg tracking-wide text-justify">
+                                I am a <span className="text-cyan-400 font-medium">software architect</span> and <span className="text-cyan-400 font-medium">systems engineer</span> dedicated to building <span className="text-cyan-400 font-medium">scalable</span>, <span className="text-cyan-400 font-medium">fault-tolerant</span> digital infrastructure.
+                                <br /><br />
+                                With over <span className="text-cyan-400 font-medium">5 years</span> of engineering experience, I specialize in architecting high-performance applications using <span className="text-cyan-400 font-mono text-sm tracking-wider">React</span>, <span className="text-cyan-400 font-mono text-sm tracking-wider">Next.js</span>, <span className="text-cyan-400 font-mono text-sm tracking-wider">Node.js</span>, and distributed databases like <span className="text-cyan-400 font-mono text-sm tracking-wider">PostgreSQL</span> and <span className="text-cyan-400 font-mono text-sm tracking-wider">MongoDB</span>.
+                                <br /><br />
+                                My approach combines <span className="text-cyan-400 font-medium">algorithmic efficiency</span> with <span className="text-cyan-400 font-medium">system design principles</span> to deliver optionality and speed. I don't just write code; I engineer <span className="text-cyan-400 font-medium">solutions</span> optimized for performance, security, and maintainability.
+                                <br /><br />
+                                I thrive on solving complex technical challenges, from optimizing <span className="text-cyan-400 font-medium">runtime latency</span> to deploying <span className="text-cyan-400 font-medium">containerized microservices</span>. Always iterating, always compiling new knowledge.
+                            </p>
+                        </div>
                     </div>
                 </motion.div>
             </div>
