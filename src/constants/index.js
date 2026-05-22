@@ -1,13 +1,16 @@
 import portfolio from '../assets/Projects/portfolio.png';
 import jaanmak from '../assets/Projects/jaanmak.png';
 import soke from '../assets/Projects/soke.png';
+import maisonaiym from '../assets/Projects/maisonaiym1.png';
+import intercessor from '../assets/Projects/intercessor1.png';
 
 
-export const HERO_CONTENT = `I am a passionate software engineer with a focus on building scalable and efficient web applications and mobile applications. I have a strong background in JavaScript, React, and Node.js, and I love tackling complex problems with elegant solutions.
-I am always eager to learn new technologies and improve my skills. I believe in the power of collaboration and enjoy working in teams to create innovative products that make a difference. and with 5 years experience in the industry, I have honed my skills in full-stack development, cloud computing, and DevOps practices.`;
+export const HERO_CONTENT = `I am a full-stack software engineer who builds high-performance, production-grade web and mobile platforms — from luxury e-commerce storefronts and community hubs to distributed systems serving tens of thousands of concurrent users. My core stack spans React, Next.js, TypeScript, Node.js, and PostgreSQL, with deep work in Stripe, AI/LLM integration, authentication, and cloud deployment on Vercel and AWS.
+Over the past five years I have shipped MERN and Next.js platforms that have processed 50,000+ transactions, cut end-to-end latency by 65%, and held 99.9% uptime under real production load. I am equally comfortable architecting the system, owning the database schema, hardening the API, and crafting the pixel-perfect interface — and I increasingly bring AI-driven workflows into the products I build to push them further than a traditional stack alone can reach.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile software engineer with a passion for creating innovative solutions. With a strong foundation in computer science and extensive experience in full-stack development, I thrive on tackling complex challenges and delivering high-quality software products.
-My expertise lies in designing and implementing scalable web applications, leveraging modern technologies such as React, Node.js, and cloud platforms. I am committed to continuous learning and staying up-to-date with industry trends to ensure that I can provide the best solutions for my clients`;
+export const ABOUT_TEXT = `I am a full-stack software engineer who treats every product as a system to be engineered end to end — from database schema and API design through to the last interaction on the frontend. I have shipped production platforms across luxury e-commerce, faith-based community tools, digital agency sites, and multi-tenant marketplaces, and I take ownership of architecture, performance, and user experience as a single responsibility rather than three separate ones.
+My core stack is Next.js, React, TypeScript, Node.js, and PostgreSQL, with strong experience integrating Stripe, Resend, NextAuth, JWT, Prisma, and AI/LLM workflows. I care about the parts users never see — clean data models, predictable APIs, careful error handling, secure auth, and observability — because that is what keeps the parts they do see fast, reliable, and trustworthy.
+I am happiest building things that have to actually work: real payments, real users, real edge cases. I collaborate well with founders and product teams, translate fuzzy requirements into concrete systems, and ship.`;
 
 export const EXPERIENCES = [
     {
@@ -34,6 +37,26 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+    {
+        title: 'Maison AIYM — Luxury Tanning E-Commerce',
+        image: maisonaiym,
+        description:
+            'A fully custom-built e-commerce platform for a UK luxury beauty brand. Engineered a Next.js + TypeScript storefront with product spotlight, variant selection, and a persistent cart, integrated with Stripe Checkout and webhook-driven order creation backed by PostgreSQL. Built a complete customer account system covering orders, saved addresses, and preferences, plus transactional emails (order confirmation, dispatch, refund, and review requests) via Resend. Delivered a JWT-protected admin panel on a dedicated subdomain (admin.maisonaiym.com) for orders, customers, inventory, returns with real Stripe refunds, newsletter, and analytics. Fully mobile responsive with GDPR-compliant cookie consent, deployed on Vercel.',
+        technologies: ['Next.js', 'TypeScript', 'React', 'PostgreSQL', 'Tailwind CSS', 'Stripe API', 'Resend', 'JWT Auth', 'REST APIs', 'Vercel'],
+        link: "https://maisonaiym.com",
+        category: "Full Stack",
+        status: "Live"
+    },
+    {
+        title: 'Intercessor — Christian Content & Community Platform',
+        image: intercessor,
+        description:
+            'A fully custom-built resource discovery and community platform. Engineered a dynamic content hub for browsing and viewing music, podcasts, recommended books, and biblical character studies, alongside an interactive event board with Google Maps integration for precise location mapping. Built a secure, bespoke admin CMS for managing platform content, spotlight features, and dynamic site-wide page content, backed by a custom JWT-based authentication flow using NextAuth and bcryptjs. Automated platform communications via SMTP through Nodemailer, and delivered a highly responsive layout with Tailwind CSS v4 and fluid micro-interactions powered by Framer Motion.',
+        technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Tailwind CSS', 'NextAuth', 'Framer Motion', 'Google Maps API', 'Nodemailer', 'bcryptjs'],
+        link: "https://intercessor.uk",
+        category: "Full Stack",
+        status: "Live"
+    },
     {
         title: 'JAANMAK',
         image: jaanmak,

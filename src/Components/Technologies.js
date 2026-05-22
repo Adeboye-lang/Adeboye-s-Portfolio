@@ -1,4 +1,4 @@
-import { RiReactjsLine, RiJavascriptLine, RiFlutterFill } from "react-icons/ri";
+import { RiReactjsLine, RiJavascriptLine, RiFlutterFill, RiRobot2Line } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa6";
 import { FaHtml5 } from "react-icons/fa";
@@ -13,6 +13,7 @@ const technologies = [
     { name: "Node.js", icon: FaNodeJs, color: "text-green-500", glow: "shadow-green-500" },
     { name: "Flutter", icon: RiFlutterFill, color: "text-cyan-400", glow: "shadow-cyan-400" },
     { name: "HTML5", icon: FaHtml5, color: "text-orange-500", glow: "shadow-orange-500" },
+    { name: "AI Development", icon: RiRobot2Line, color: "text-purple-400", glow: "shadow-purple-400" },
 ];
 
 const Hexagon = ({ tech, index }) => {

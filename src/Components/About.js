@@ -86,22 +86,29 @@ const About = () => {
 
                             {/* Responsive Text Alignment & Size */}
                             <p className="text-sm lg:text-base text-left lg:text-justify">
-                                I operate as a <span className="bg-cyan-950/50 text-cyan-300 px-1 border border-cyan-500/30">High-Level Architect</span> within the digital infrastructure space. My primary directive is constructing <span className="text-cyan-400 font-bold">fault-tolerant systems</span> capable of sustaining heavy data loads with <span className="text-cyan-400 font-bold">zero latency</span>.
+                                I operate as a <span className="bg-cyan-950/50 text-cyan-300 px-1 border border-cyan-500/30">Full-Stack Engineer</span> across the entire product surface — database schema, API design, auth, frontend, and deployment. My primary directive is building <span className="text-cyan-400 font-bold">fault-tolerant systems</span> that handle real payments, real users, and real edge cases with <span className="text-cyan-400 font-bold">low latency</span>.
                             </p>
 
                             <p className="text-sm lg:text-base text-left lg:text-justify">
                                 <span className="text-cyan-500/50 mr-2">[EXP_LOG]:</span>
-                                With <span className="text-white font-bold">5+ YEARS</span> of runtime uptime, I specialize in the deployment of distributed applications using the <span className="text-cyan-300">[MERN_STACK]</span> + <span className="text-cyan-300">[NEXT_JS]</span> matrix.
+                                With <span className="text-white font-bold">5+ YEARS</span> of runtime, I have shipped production platforms on the <span className="text-cyan-300">[MERN_STACK]</span> + <span className="text-cyan-300">[NEXT_JS]</span> matrix, integrating <span className="text-cyan-300">[STRIPE]</span>, <span className="text-cyan-300">[POSTGRES]</span>, <span className="text-cyan-300">[PRISMA]</span>, and increasingly <span className="text-purple-300">[AI / LLM]</span> workflows.
+                            </p>
+
+                            <p className="text-sm lg:text-base text-left lg:text-justify">
+                                <span className="text-cyan-500/50 mr-2">[DOMAIN_LOG]:</span>
+                                Recent builds include a luxury UK e-commerce platform with Stripe-powered admin refunds, a Christian content & community hub with Google-Maps event mapping, and a multi-tenant marketplace handling <span className="text-white font-bold">50,000+ transactions</span> at <span className="text-white font-bold">99.9% uptime</span>.
                             </p>
 
                             <p className="text-sm lg:text-base text-left lg:text-justify">
                                 <span className="text-cyan-500/50 mr-2">[SYS_DIRECTIVE]:</span>
-                                I don't just write code {"//"} I engineer <span className="text-cyan-300 border-b border-cyan-500 border-dashed">solutions</span> that optimize performance metrics and ensure maximum scalability for enterprise-grade environments.
+                                I don't just write code {"//"} I engineer <span className="text-cyan-300 border-b border-cyan-500 border-dashed">end-to-end systems</span> — clean data models, predictable APIs, secure auth, and pixel-tight interfaces — that stay fast and trustworthy as they scale.
                             </p>
 
-                            <div className="pt-6 border-t border-cyan-500/30 flex flex-col sm:flex-row justify-between items-start sm:items-center text-xs text-cyan-500 gap-2">
-                                <span>CACHE_SIZE: 1024TB</span>
-                                <span>OPTIMIZATION: 99.9%</span>
+                            <div className="pt-6 border-t border-cyan-500/30 grid grid-cols-2 sm:grid-cols-4 gap-3 text-[10px] sm:text-xs font-mono text-cyan-500">
+                                <div><span className="text-neutral-500">TX_PROC:</span> <span className="text-cyan-300">50K+</span></div>
+                                <div><span className="text-neutral-500">LATENCY:</span> <span className="text-cyan-300">-65%</span></div>
+                                <div><span className="text-neutral-500">UPTIME:</span> <span className="text-cyan-300">99.9%</span></div>
+                                <div><span className="text-neutral-500">USERS:</span> <span className="text-cyan-300">10K+</span></div>
                             </div>
                         </div>
 

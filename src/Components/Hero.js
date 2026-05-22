@@ -129,17 +129,51 @@ const Hero = () => {
               variants={container(1.5)}
               initial="hidden"
               animate="visible"
-              className="flex flex-wrap gap-4 mt-4 justify-center lg:justify-start"
+              className="flex flex-wrap gap-4 mt-4 justify-center lg:justify-start w-full px-4 lg:px-0"
             >
-
-
               <a
                 href="mailto:boyebello@gmail.com"
-                className="group relative px-6 py-3 font-mono text-sm tracking-wider text-neutral-300 uppercase transition-all duration-300 border border-neutral-700 bg-neutral-900/80 hover:bg-neutral-800 overflow-hidden w-full sm:w-auto text-center"
+                className="group relative px-6 py-3 font-mono text-sm tracking-wider text-neutral-300 uppercase transition-all duration-300 border border-cyan-500/50 bg-cyan-950/30 hover:bg-cyan-900/40 hover:border-cyan-400 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] overflow-hidden w-full sm:w-auto text-center"
               >
-                <span className="relative z-10">INITIATE_CONTACT</span>
+                <span className="relative z-10 text-cyan-300">INITIATE_CONTACT</span>
+                <div className="absolute inset-0 bg-cyan-400/10 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500 skew-x-12"></div>
+              </a>
+
+              <a
+                href="#projects"
+                className="group relative px-6 py-3 font-mono text-sm tracking-wider text-neutral-300 uppercase transition-all duration-300 border border-neutral-700 bg-neutral-900/80 hover:bg-neutral-800 hover:border-purple-500/60 overflow-hidden w-full sm:w-auto text-center"
+              >
+                <span className="relative z-10 group-hover:text-purple-300 transition-colors">VIEW_PROJECTS</span>
                 <div className="absolute inset-0 bg-white/5 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500 skew-x-12"></div>
               </a>
+            </motion.div>
+
+            {/* Stats Telemetry Row */}
+            <motion.div
+              variants={container(2)}
+              initial="hidden"
+              animate="visible"
+              className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 w-full max-w-xl px-4 lg:px-0"
+            >
+              {[
+                { label: "YRS_RUNTIME", value: "5+" },
+                { label: "TRANSACTIONS", value: "50K+" },
+                { label: "UPTIME", value: "99.9%" },
+                { label: "LATENCY_CUT", value: "-65%" },
+              ].map((stat, i) => (
+                <div
+                  key={i}
+                  className="group relative border border-neutral-800 bg-neutral-900/50 backdrop-blur-sm p-3 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(34,211,238,0.15)] transition-all duration-300"
+                >
+                  <div className="text-xl lg:text-2xl font-mono font-bold text-cyan-400 group-hover:text-cyan-300">
+                    {stat.value}
+                  </div>
+                  <div className="text-[10px] font-mono tracking-widest text-neutral-500 mt-1">
+                    {stat.label}
+                  </div>
+                  <div className="absolute top-1 right-1 w-1 h-1 rounded-full bg-green-500 animate-pulse"></div>
+                </div>
+              ))}
             </motion.div>
 
           </div>
